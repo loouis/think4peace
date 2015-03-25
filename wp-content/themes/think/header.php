@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
+
+	<link href="//www.google-analytics.com" rel="dns-prefetch">
+
+	<!-- favicons for all devices  -->
+    <link rel="apple-touch-icon" sizes="57x57" href="<?php bloginfo(template_url);?>/img/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="<?php bloginfo(template_url);?>/img/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="<?php bloginfo(template_url);?>/img/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="<?php bloginfo(template_url);?>/img/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="<?php bloginfo(template_url);?>/img/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/<?php bloginfo(template_url);?>/imgapple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="<?php bloginfo(template_url);?>/img/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="<?php bloginfo(template_url);?>/img/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo(template_url);?>/img/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="<?php bloginfo(template_url);?>/img/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo(template_url);?>/img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="<?php bloginfo(template_url);?>/img/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo(template_url);?>/img/favicon-16x16.png">
+	<link rel="manifest" href="<?php bloginfo(template_url);?>/img/manifest.json">
+	<meta name="msapplication-TileColor" content="#009cd6">
+	<meta name="msapplication-TileImage" content="<?php bloginfo(template_url);?>/img/ms-icon-144x144.png">
+	<meta name="theme-color" content="#009cd6">
+
+
+	<!-- meta tags -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+
+	<!-- media queries -->
+	<meta name="viewport" content="width=device-width">
+
+	<!-- enqueue scripts and styles -->
+	<?php wp_head(); ?>
+
+
+	<!--  -->
+	<script src="//use.typekit.net/mzu5arh.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+	<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+	<script type="text/javascript">stLight.options({publisher: "c61661e3-1696-4a81-ad66-d9abf0188c78", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+</head>
+	<body <?php body_class( $class ); ?>>
+
+	<nav>
+		<div class="wrapper">
+
+			<a class="logo" href="<?php bloginfo(url);?>/#welcome">
+				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 211.1 46.9" enable-background="new 0 0 211.1 46.9" xml:space="preserve"><g><path fill="#FFFFFF" d="M14,10.4l4-4.1v39.8h-4V10.4z M5.5,5.7h11.9l-4,4.1H1.5L5.5,5.7z M23.7,5.7h11.6l-4.1,4.1h-7.5V5.7zM0.9,5.5l4-4v3.6l-4,4.1V5.5z M5.1,0L0,5.1v5.5h13.1v36.3h5.5l5.1-5.1V10.6h7.9l5.2-5.2V0H5.1z"/><g><defs><rect id="SVGID_1_" y="0" width="211.1" height="46.9"/></defs><clipPath id="SVGID_2_"><use xlink:href="#SVGID_1_"  overflow="visible"/></clipPath><path clip-path="url(#SVGID_2_)" fill="#FFFFFF" d="M71.4,23.1V19H60.5l-4.1,4.1H71.4z M55,23.9V1.5l-4,4v40.6h4V27.9h17.2v18.2h4V1.5l-4,4c0,6.1-0.1,12.4-0.1,18.5H55z M60.7,28.8v13.1l-5.2,5.1h-5.5V5.1L55.2,0h5.5v18.2h10.6V5.1L76.5,0h5.5v41.8l-5.1,5.1h-5.5V28.8H60.7z"/></g><path fill="#FFFFFF" d="M101,5.5l4-4v44.6h-4V5.5z M105.2,0l-5.1,5.1v41.8h5.5l5.2-5.1V0H105.2z"/><path fill="#FFFFFF" d="M129.8,5.5l4-4v44.6h-4V5.5z M151.1,5.5l4-4v44.6H150l-10.4-23.6v-10l11.5,25.9V5.5z M155.3,0l-5.1,5.1v17.3L140.3,0h-6.3L129,5.1v41.8h5.5l5.2-5.1V24.5l9.8,22.4h6.3l5.1-5.1V0H155.3z"/><path fill="#FFFFFF" d="M195.3,28l2.3-4.1l10,17.7l-2.2,4L195.3,28z M184.7,26.8l12.1-21.3l6.9-4.1l-14.9,26.4v13.6l-4.1,4V26.8zM179.9,5.5l4-4v44.6h-4V5.5z M204.8,0l-8.6,5l-6.5,11.5V0h-5.5L179,5.1v41.8h5.5l5.2-5.1V29.6l9.8,17.3h6.1l3-5.3l-10.4-18.6L211.1,0H204.8z"/></g>
+			</a>
+			
+			<!-- Burger button -->
+			<button class="burger-menu">
+				<div id="nav-icon3">
+				  <span></span>
+				  <span></span>
+				  <span></span>
+				  <span></span>
+				</div>
+			</button>
+			
+			<?php if(is_front_page() ) {?>
+
+				<!-- Front page header -->
+				<div class="links-container home-nav" id="menu-center">
+					<ul class="nav-links">
+						<li class="nav-links__the-challenge"><a href="#" data-scroll-nav='1'>The Challenge</a></li>
+						<li class="nav-links__the-schools"><a href="#" data-scroll-nav='2'>The Schools we work with</a></li>
+						<li class="nav-links__the-methodology"><a href="#" data-scroll-nav='3'>The Methodology</a></li>
+						<li class="nav-links__the-benefits"><a href="#" data-scroll-nav='4'>The Benefits</a></li>
+						<li class="nav-links__blog"><a href="#" data-scroll-nav='5'>Blog</a></li>
+						<li class="nav-links__contact"><a href="#">Contact</a></li>
+					</ul>
+				</div><?php
+			}
+			else{?>
+
+			<!-- Other page header -->
+			<div class="links-container" id="menu-center">
+				<ul class="nav-links">
+					<li class="nav-links__the-challenge"><a href="<?php bloginfo(url);?>/#the-challenge">The Challenge</a></li>
+					<li class="nav-links__the-schools"><a href="<?php bloginfo(url);?>/#the-schools">The Schools we work with</a></li>
+					<li class="nav-links__the-methodology"><a href="<?php bloginfo(url);?>/#the-methodology">The Methodology</a></li>
+					<li class="nav-links__the-benefits"><a href="<?php bloginfo(url);?>/#the-benefits">The Benefits</a></li>
+					<li class="nav-links__blog"><a href="<?php bloginfo(url);?>/#blog">Blog</a></li>
+					<li class="nav-links__contact"><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<?php }?>
+			
+		</div>
+	</nav>

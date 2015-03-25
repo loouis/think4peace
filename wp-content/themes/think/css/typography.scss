@@ -1,0 +1,72 @@
+$base-font-size: 16px;
+
+body, html{
+	font-family: $prox;
+	font-size: $base-font-size;
+	line-height:22px;
+}
+
+h1,h2,h3,h4,h5{
+	font-family: $prox;
+	line-height: 1.3em;
+	padding-bottom:5px;
+	color:$tblue;
+}
+
+p{
+	color:#727272;
+	font-weight:300;
+	font-size: em(16px);
+}
+
+h1{
+	font-size: em(28px);
+	font-weight:600;
+}
+
+h2{
+	font-size: em(28px);
+	font-weight:300;
+}
+
+h3{
+	font-size: em(22px);
+	font-weight:100;
+	
+	@include screen (medium){
+		font-size: em(28px);		
+	}
+}
+
+h4{
+	font-size: em(18px);
+	font-weight:300;
+	
+	@include screen (medium){
+		font-size: em(22px);
+	}
+}
+
+h5{
+	font-size: em(16px);
+}
+
+blockquote{
+	font-weight:italic;
+}
+
+strong{
+	font-weight:500;
+	color:$tblue;
+}
+
+span.shout-out{
+	color:$tblue;
+	font-weight:600;
+}
+
+time{
+	font-size: em(22px);
+	font-weight:200;
+	line-height: 1.05em;
+}

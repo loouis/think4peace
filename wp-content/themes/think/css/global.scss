@@ -1,0 +1,24 @@
+//Reset that page please
+@import "reset";
+
+//Mixins for media queries screen widths and other functions that make css easier
+@import "mixins";
+
+//Grid for the whole website. Overrides for each section are in base.scss
+@import "grid";
+
+//Where the variables are stored
+@import "variables";
+
+//Little details on the site are in here
+@import "details.scss";
+
+//All the global typography styles
+@import "typography";
+
+//The core css styles
+@import "base";
+
+
+
+
