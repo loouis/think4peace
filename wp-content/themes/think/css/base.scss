@@ -189,6 +189,10 @@ section#the-challenge{
 		}
 	}
 
+
+//----------------------------------------------------------- WORK HERE!!!
+
+
 	.left-column{
 		.row3{
 			.one--third{
@@ -206,6 +210,20 @@ section#the-challenge{
 				}
 			}
 		}
+
+		.row2{
+			.one--third{
+				&:nth-child(3){
+					margin-left:2%;
+					svg{
+						height:150px;
+						float: right;
+					}
+				}
+			}
+		}
+
+
 	}
 
 	.right-column{
@@ -330,6 +348,16 @@ section#the-schools{
 
 	
 	.left-column{
+
+		.row3{
+			.two--thirds{
+				img{
+					margin-top:0.7% !important;
+					
+				}
+			}
+		}
+
 		@include screen (medium){
 			.two--thirds{
 				margin-right:0 !important;
@@ -361,16 +389,6 @@ section#the-schools{
 			width:50%;
 			float:right;
 		}
-		
-		// .left-column{
-		// 	.row3{
-		// 		.two--thirds{
-		// 			img{
-		// 				margin-top:0 !important;
-		// 			}
-		// 		}
-		// 	}
-		// }
 		
 
 		.school-text{
@@ -460,7 +478,9 @@ section#the-methodology{
 			}
 		}
 		
-		margin-top:20px;
+		@include screen (medium){
+			margin-top:20px;
+		}
 		
 	}
 
@@ -469,14 +489,17 @@ section#the-methodology{
 		
 		.row2{
 			.one--third{
-				margin-top:0 !important;
-				
-				&:nth-child(3){
-					margin-top:20px;
-				}
 
-				p{
-					margin-top:0;
+				@include screen (medium){
+					margin-top:0 !important;
+				
+					&:nth-child(3){
+						margin-top:20px;
+					}
+
+					p{
+						margin-top:0;
+					}
 				}
 			}
 		}
@@ -600,8 +623,6 @@ section#the-benefits{
 		.left-column{
 
 			.one--third{
-				// margin-left: 0;
-				// margin-right:0;
 				
 				@include screen(medium){
 					margin-bottom:40px;
@@ -637,7 +658,21 @@ section#the-benefits{
 		.right-column{
 			
 			span.large-type{
-				left: 34px;
+
+				left:0;
+
+				@include screen(medium){
+					left: 34px;
+					
+					svg{
+						width:100%;
+					}
+				}
+
+				svg{
+					margin-top:12px;
+					width:50%;
+				}
 			}
 
 			img{
@@ -704,16 +739,21 @@ section#quotes{
 		}
 		
 		.school-text__student{
-			margin-top:60px;
-			@include clearfix;
-
+  			margin-top: 20px;
+			@include screen (medium){
+				margin-top:60px;
+			}
 			
 			p{
 				clear:both;
 				&:nth-child(1){
-					width:50%;
+					width:100%;
+					padding-bottom:5%;
+					@include screen (medium){
+						width:50%;
+						padding-bottom:20%;
+					}
 					float:right;
-					padding-bottom:20%;
 				}
 			}
 		}

@@ -205,7 +205,7 @@ get_header(); ?>
 
 					<div class="two--thirds">
 						<!-- Letter i-->
-						<span class="large-type letter-i" data-anchor-target="#the-schools" data-150-top="transform: translate(0px, 150px); " data-top-bottom="transform: translate(0px,-300px);">
+						<span class="large-type letter-i" data-anchor-target="#the-schools" data-bottom-top ="transform: translate(0px, 150px); " data-top-bottom="transform: translate(0px,-300px);">
 							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="311 0 180.9 799" enable-background="new 311 0 180.9 799" xml:space="preserve"><path fill="#009BD6" d="M325.4,93l68.3-68.3v759.7h-68.3V93z M397.9,0L311,86.9V799h93l87.9-86.9V0H397.9z"/></svg>
 						</span>
 
@@ -408,7 +408,7 @@ get_header(); ?>
 		<!-- Quotes -->
 		<section id="quotes">
 		<!-- ** change to 140 for the live site ** -->
-		<?php $quotes = new WP_Query('page_id=140');
+		<?php $quotes = new WP_Query('page_id=139');
 		while($quotes->have_posts()) : $quotes->the_post(); ?>
 
 			<div class="main-wrapper">
