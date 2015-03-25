@@ -407,7 +407,7 @@ get_header(); ?>
 
 		<!-- Quotes -->
 		<section id="quotes">
-
+		<!-- ** change to 140 for the live site ** -->
 		<?php $quotes = new WP_Query('page_id=139');
 		while($quotes->have_posts()) : $quotes->the_post(); ?>
 
@@ -436,7 +436,7 @@ get_header(); ?>
 
 					<div class="row3">
 						<div class="one--third">
-							<?php the_field('third_bottom_testimonial');?>
+							<img src="<?php the_field('third_bottom_testimonial_image');?>" alt="">
 						</div>
 
 						<div class="two--thirds">
@@ -445,18 +445,21 @@ get_header(); ?>
 								<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 560 560" enable-background="new 0 0 560 560" xml:space="preserve"><path fill="#009BD6" d="M292.5,334l27.5-48.5L438.9,497l-26.8,47.8L292.5,334z M166.5,320.2L310.6,66.6l82.6-48.5L215,332.5v162.3l-48.5,47.8V320.2z M108.5,65.2l47.8-47.8v532.5h-47.8V65.2z M405.5,0L302.7,59.4l-77.5,136.9V0h-65.9L98.4,60.9V560h65.2l61.6-60.9V353.5L341.8,560H415l35.5-63L325.9,275.3L481.6,0H405.5z"/></svg>
 							</span>
 
-							<img src="<?php the_field('third_bottom_testimonial_image');?>" alt="">
+							<?php the_field('third_bottom_testimonial');?>
 						</div>
 					</div>
 
 				</div>
 
 				<div class="right-column">
-					<div class="school-text">
-						<?php the_field('two_right_testimonial');?>
-					</div>
 					<div class="one--half hide">
+					<?php the_field('two_right_testimonial');?>
 						<img src="<?php the_field('two_right_testimonial_image');?>" alt="">
+					</div>
+					<div class="school-text school-text__student">
+						<p>'There was a very important message being taught in a fun and interactive manner. I have learned how to react and think differently in complicated situations.'</p>
+
+						<p>'THINK has been a great experience for me. We met some really interesting people with life changing stories. I have learned how to control my anger: I got annoyed sometimes when the whole group wasn’t agreeing,  but we always managed to find a solution. I have become close to people who I would never have imagined being friends with, for example people that I really didn’t like but now I would call them close friends. THINK has been the best opportunity I’ve ever had. I’ll never forget what I have learned through this experience, it will stay with me my whole life.'</p>
 					</div>
 				</div>
 				

@@ -634,17 +634,17 @@ section#the-benefits{
 			}
 		}
 
-		.right-column{
+		// .right-column{
 			
-			span.large-type{
-				left: 34px;
-			}
+		// 	span.large-type{
+		// 		left: 34px;
+		// 	}
 
-			img{
-				float:right;
-				width:50%;
-			}
-		}
+		// 	img{
+		// 		float:right;
+		// 		width:50%;
+		// 	}
+		// }
 	}
 }
 
@@ -692,6 +692,25 @@ section#quotes{
 
 	.right-column{
 		margin-top: 0; 
+		
+		.school-text__student{
+			margin-top:60px;
+			@include clearfix;
+
+			
+			p{
+				clear:both;
+				&:nth-child(1){
+					width:50%;
+					float:right;
+					padding-bottom:20%;
+				}
+			}
+		}
+
+		.one--half{
+			margin-bottom:80px;
+		}
 	}
 
 	span.large-type{

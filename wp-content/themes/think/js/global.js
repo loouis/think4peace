@@ -117,8 +117,6 @@ jQuery(document).ready(function($){
 
  		$('.lightbox').fadeOut();
 
-
-
  		//Kill video
  		$('section#lightbox-video .video-wrapper').empty();
  	});

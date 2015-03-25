@@ -44,11 +44,15 @@ h1,h2,h3,h4,h5{
 	color:$tblue;
 }
 
-p, li{
+p, li, blockquote{
 	font-family: $prox;
 	color:#727272;
 	font-weight:300;
 	font-size: em(16px);
+}
+
+i{
+	color:$tblue;
 }
 
 h1{
