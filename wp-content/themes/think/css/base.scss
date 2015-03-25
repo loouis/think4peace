@@ -1112,6 +1112,7 @@ section{
 		max-width:850px;
 		margin: 0 auto;
 		padding: 0 15px;
+		@include clearfix;
 		position:relative;
 		
 		@include screen (medium){
@@ -1121,7 +1122,7 @@ section{
 	}
 
 	.close-container{
-		background:rgba($tblue,0.9);
+		background:rgba($tblue,0.95);
 		position:fixed;
 		top:0;
 		cursor:zoom-out;
@@ -1133,7 +1134,45 @@ section{
 }
 
 #contact-form .lightbox-wrapper{
-	max-width:450px;
+	max-width:1000px;
+	margin-top:75px;
+	
+	.left-column{
+		h2{
+			color:white;
+			padding-bottom:40px;
+			position:relative;
+			
+			&:after{
+				content:"";
+				position:absolute;
+				left:0;
+				top:48px;
+				height:2px;
+				background:white;
+				width:40px;
+			}
+		}
+
+		a{
+			color:white;
+			text-decoration:underline;
+		}
+	}
+
+	.right-column{
+		margin-top:0px;
+		
+		p{
+			padding-bottom:0;
+		}
+	}
+
+
+	p{
+		color:white;
+		// text-align:center;
+	}
 }
 
 
@@ -1146,12 +1185,31 @@ input, textarea, .wpcf7-submit{
 	outline: 0;
   	border: 0;
   	font-size:14px;
+  	background:none;
+  	color:white;
+  	border: 2px solid white;
+  	resize: vertical;
   	
   	@include screen (medium){
   		margin: 10px 0;
   		transition: letter-spacing .3s ease-in-out;
   	}
 }
+
+::-webkit-input-placeholder { /* WebKit browsers */
+	    color:    white !important;
+	}
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	   color:    white !important;
+	   opacity:  1;
+	}
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+	   color:    white !important;
+	   opacity:  1;
+	}
+	:-ms-input-placeholder { /* Internet Explorer 10+ */
+	   color:    white !important;
+	}
 
 .wpcf7-submit:hover{
 	letter-spacing:1px;
@@ -1160,25 +1218,6 @@ input, textarea, .wpcf7-submit{
 
 div.wpcf7{
 	font-family:$prox;
-	
-	h2{
-		color:white;
-		text-align:center;
-		padding-bottom:30px;
-		position:relative;
-		
-		&:after{
-			content:"";
-			position:absolute;
-			left:50%;
-			right:50%;
-			margin-left:-25px;
-			top:40px;
-			height:2px;
-			background:white;
-			width:50px;
-		}
-	}
 }
 
 .wpcf7-form input[type="submit"] {
@@ -1186,11 +1225,20 @@ div.wpcf7{
   outline: 0;
   margin-top:5px;
   color:white;
-  font-size:18px;
   font-family:$prox;
   border: 0;
-	padding:11px;
+  background:white;
+  color:$tblue;
+  padding:14px 0;
+  
+  text-align: center;
+  
+
 }
+
+ .ajax-loader{
+  	display:none !important;
+  }
 
 .wpcf7-form, .sent{
 	position:relative !important;
@@ -1198,7 +1246,7 @@ div.wpcf7{
 	
 	.wpcf7-response-output{
 		position:absolute !important;
-		bottom:77px !important;
+		bottom:68px !important;
 		width:100% !important;
 		color:white !important;
 		color: white !important;

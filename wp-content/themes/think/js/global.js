@@ -22,7 +22,7 @@ jQuery(document).ready(function($){
 
 	if (!isMobile()) {
 	//Sticky init
-	$('.sticky').sticky({topSpacing:110});
+		$('.sticky').sticky({topSpacing:110});
 
 	}
 
@@ -34,11 +34,6 @@ jQuery(document).ready(function($){
 		// $('ul.nav-links').toggleClass("show-navigation");
 		$('ul.nav-links').slideToggle();
 		$('#nav-icon3').toggleClass('open');
-	});
-
-	$('.nav-links__contact').click(function(e){
-		e.preventDefault();
-		$('#contact-form').fadeIn();
 	});
 
 	//change z-index on large letter when near the video
@@ -56,6 +51,8 @@ jQuery(document).ready(function($){
  	// video lightbox
  	$('#play-video').click(function(){
 
+ 		$('body').addClass("noScroll");
+
  		//Fade in lightbox
  		$('section#lightbox-video').fadeIn();
 
@@ -72,6 +69,25 @@ jQuery(document).ready(function($){
 
  		}).resize();
  	});
+
+ 	// contact lightbox
+ 	$('.nav-links__contact').click(function(e){
+		e.preventDefault();
+
+		$('body').addClass("noScroll");
+		$('#contact-form').fadeIn();
+
+		$(window).on('resize', function(){
+ 			
+ 			//Get the parent, video, lightbox height and width
+ 			var lightboxHeight = $('.lightbox').height();
+ 				contactHeight = $('.lightbox-wrapper').height();
+
+	 		//video marginTop : parent height - video height /2
+	 		$('.lightbox-wrapper').css('margin-top',(lightboxHeight - 500) / 2);
+
+ 		}).resize();
+	});
 
  	//Add class you mobile nav to add close functionality on click
  	$(window).on('resize', function(){
@@ -97,7 +113,11 @@ jQuery(document).ready(function($){
 
  	//Close video lightbox
  	$('.close-container').click(function(){
+ 		$('body').removeClass("noScroll");
+
  		$('.lightbox').fadeOut();
+
+
 
  		//Kill video
  		$('section#lightbox-video .video-wrapper').empty();

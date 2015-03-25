@@ -408,7 +408,7 @@ get_header(); ?>
 		<!-- Quotes -->
 		<section id="quotes">
 
-		<?php $quotes = new WP_Query('page_id=140');
+		<?php $quotes = new WP_Query('page_id=139');
 		while($quotes->have_posts()) : $quotes->the_post(); ?>
 
 			<div class="main-wrapper">
@@ -544,7 +544,26 @@ get_header(); ?>
 		<div class="close-container"></div>
 
 		<div class="lightbox-wrapper">
-			<?php echo do_shortcode('[contact-form-7 id="99" title="Contact form"]')?>		
+			<div class="left-column">
+				<h2>Contact us</h2>
+
+				<p>We need your support in order to expand THINK into more schools.</p></br>
+
+				<p>To discuss your involvement in greater detail we'd be delighted to welcome you to the Tim Ball Jonathan Parry Foundation for Peace Centre in Warrington, so to book an appointment please email <a href="mailto:email@adress.com?subject=Book and appointment" alt="">Kelly Simcock</a> or <a href="mailto:email@adress.com?subject=Book and appointment" alt="">Nick Taylor</a></p>
+				
+				<p></br>
+					<p>THINK</p>
+					<p>Foundation for Peace</p>
+					<p>Peace Drive</p>
+					<p>Warrington</p>
+					<p>Cheshire</p>
+					<p>W15 1HQ</p>
+				</p>
+			</div>
+
+			<div class="right-column">
+				<?php echo do_shortcode('[contact-form-7 id="99" title="Contact form"]')?>	
+			</div>	
 		</div>
 	</section><!-- /lightbox video -->
 
