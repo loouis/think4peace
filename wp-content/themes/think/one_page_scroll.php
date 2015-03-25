@@ -441,8 +441,8 @@ get_header(); ?>
 
 						<div class="two--thirds">
 
-							<span class="large-type" data-anchor-target="#quotes" data-400-top ="transform: translate(0px, 50px); " data-top-bottom="transform: translate(0px,-300px);">
-								<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 560 560" enable-background="new 0 0 560 560" xml:space="preserve"><path fill="#009BD6" d="M292.5,334l27.5-48.5L438.9,497l-26.8,47.8L292.5,334z M166.5,320.2L310.6,66.6l82.6-48.5L215,332.5v162.3l-48.5,47.8V320.2z M108.5,65.2l47.8-47.8v532.5h-47.8V65.2z M405.5,0L302.7,59.4l-77.5,136.9V0h-65.9L98.4,60.9V560h65.2l61.6-60.9V353.5L341.8,560H415l35.5-63L325.9,275.3L481.6,0H405.5z"/></svg>
+							<span class="large-type" data-anchor-target="#quotes" data-400-top ="transform: translate(0px, -50px); " data-top-bottom="transform: translate(0px,-500px);">
+								<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 560 560" enable-background="new 0 0 560 560" xml:space="preserve"><path fill="#009BD6" d="M227.5,123.7l47.8-48.5v473.9h-47.8V123.7z M126.3,68h141.8l-47.8,48.5H78.5L126.3,68z M343.3,68h138.2L433,116.5h-89.7V68z M71.3,65.1L119,17.4v43.4l-47.8,48.5V65.1z M121.9,0L61.1,60.8v65.8h156.3v432.7h65.1l60.8-60.8V126.6h94.1l61.5-61.5V0H121.9z"/></svg>
 							</span>
 
 							<?php the_field('third_bottom_testimonial');?>
@@ -457,9 +457,8 @@ get_header(); ?>
 						<img src="<?php the_field('two_right_testimonial_image');?>" alt="">
 					</div>
 					<div class="school-text school-text__student">
-						<p>'There was a very important message being taught in a fun and interactive manner. I have learned how to react and think differently in complicated situations.'</p>
-
-						<p>'THINK has been a great experience for me. We met some really interesting people with life changing stories. I have learned how to control my anger: I got annoyed sometimes when the whole group wasn’t agreeing,  but we always managed to find a solution. I have become close to people who I would never have imagined being friends with, for example people that I really didn’t like but now I would call them close friends. THINK has been the best opportunity I’ve ever had. I’ll never forget what I have learned through this experience, it will stay with me my whole life.'</p>
+						<p><?php the_field('student_testimonial_1');?></p> 
+						<p><?php the_field('student_testimonial_2');?></p>
 					</div>
 				</div>
 				
