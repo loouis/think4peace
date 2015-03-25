@@ -1,3 +1,48 @@
+
+//Proxima nova fonts - Light, Regular, Bold
+
+
+//Light
+@font-face {
+    font-family: 'proxima_novalight';
+    src: url('ProximaNova-Light-webfont.eot');
+    src: url('ProximaNova-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('ProximaNova-Light-webfont.woff2') format('woff2'),
+         url('ProximaNova-Light-webfont.woff') format('woff'),
+         url('ProximaNova-Light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+//Regular
+@font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url('ProximaNova-Regular-webfont.eot');
+    src: url('ProximaNova-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('ProximaNova-Regular-webfont.woff2') format('woff2'),
+         url('ProximaNova-Regular-webfont.woff') format('woff'),
+         url('ProximaNova-Regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+//Bold
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url('ProximaNova-Bold-webfont.eot');
+    src: url('ProximaNova-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('ProximaNova-Bold-webfont.woff2') format('woff2'),
+         url('ProximaNova-Bold-webfont.woff') format('woff'),
+         url('ProximaNova-Bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+//Base font
 $base-font-size: 16px;
 
 body, html{
@@ -13,7 +58,7 @@ h1,h2,h3,h4,h5{
 	color:$tblue;
 }
 
-p{
+p, li{
 	color:#727272;
 	font-weight:300;
 	font-size: em(16px);

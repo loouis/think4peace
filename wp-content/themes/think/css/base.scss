@@ -216,10 +216,11 @@ section#the-challenge{
 
 section#welcome{
 	padding-top:0px;
+	background:white;
+	
 	@media (min-width:768px){
 		padding-top:65px;
 	}
-	background:white;
 	
 	.main-wrapper{
 		@include screen(medium){
@@ -235,6 +236,9 @@ section#welcome{
 
 	.large-type{
 		position:absolute;
+		left: -240px;
+  		width: 460px;
+  		top: -80px;
 	}
 
 	.row1{
@@ -249,6 +253,24 @@ section#welcome{
 				width:100%;
 				float:left;
 				margin-left:0;
+			}
+		}
+	}
+
+	.tblue{
+	
+		@include screen (medium){
+			margin-top:50px;
+		}
+	}
+
+	.row2{
+		.one--third{
+			&:nth-child(3){
+		
+				@include screen (medium){
+					padding-right:75px;
+				}
 			}
 		}
 	}
@@ -279,6 +301,17 @@ section#welcome{
 			margin-top:0;
 		}
 	}
+
+	.right-column{
+		.hink{
+			position:absolute;
+			top: -80px;
+  			left: 195px;
+			width:260px;
+			height:80px;
+			
+		}
+	}
 		
 }
 
@@ -291,7 +324,7 @@ section#the-schools{
 		padding-top:75px;
 		
 		@include screen (medium){
-			padding-top:85px;
+			padding-top:140px;
 		}
 	}
 
@@ -453,6 +486,8 @@ section#the-methodology{
 		h5{
 			margin-top:20px;
 		}
+
+		margin-top:1.4%;
 	}
 
 	
@@ -553,6 +588,13 @@ section#the-benefits{
 					}
 				}
 			}
+			.right-column{
+
+				//reset the image with for the image in the container below
+				img{
+					width:100% !important;
+				}
+			}
 		}
 
 		.left-column{
@@ -589,6 +631,18 @@ section#the-benefits{
 				&:nth-child(2){
 					margin-top:100px;
 				}
+			}
+		}
+
+		.right-column{
+			
+			span.large-type{
+				left: 34px;
+			}
+
+			img{
+				float:right;
+				width:50%;
 			}
 		}
 	}
@@ -1005,6 +1059,8 @@ p, img{
 		padding-left:0;
 		margin-top:0;
 		clear:both;
+		font-size:1.3em;
+		line-height: 1.2em;
 	}
 
 	margin-bottom:10px;

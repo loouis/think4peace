@@ -44,7 +44,7 @@ jQuery(document).ready(function($){
 	//change z-index on large letter when near the video
 	$('.large-type').hover(function(){
 		$('#play-video').css({
-			'z-index' : '20'
+			'z-index' : '99'
 		});
 
 	});
