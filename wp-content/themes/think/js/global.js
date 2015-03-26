@@ -1,9 +1,6 @@
 jQuery(document).ready(function($){
 
 	//Skrollr init
-	
-
-	//Skrollr init
 	if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
 	    skrollr.init({
 	        forceHeight: false
@@ -15,16 +12,6 @@ jQuery(document).ready(function($){
 
 	//Scrollit init
 	$.scrollIt();
-
-	// function isMobile() {
-	// 	return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-	// }
-
-	// if (!isMobile()) {
-	// //Sticky init
-	// 	$('.sticky').sticky({topSpacing:110});
-
-	// }
 
 	// INIT Fitvids.js
 	$(".video-wrapper").fitVids();
@@ -107,12 +94,11 @@ jQuery(document).ready(function($){
 
  	//Close video lightbox
  	$('.close-container').click(function(){
+ 		//Kill video
+ 		$('section#lightbox-video .lightbox-wrapper').empty();
  		$('body').removeClass("noScroll");
 
  		$('.lightbox').fadeOut();
-
- 		//Kill video
- 		$('section#lightbox-video .video-wrapper').empty();
  	});
 
  	//close lightbox from cross button
