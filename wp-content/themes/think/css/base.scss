@@ -988,6 +988,11 @@ section#blog-single{
 	}
 
 	.main-wrapper{
+		padding-top:0;
+		
+		@include screen (medium){
+			padding-top:145px;
+		}
 		.blog-right-column{
 			width:100%;
 			
