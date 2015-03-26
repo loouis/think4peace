@@ -77,16 +77,16 @@ jQuery(document).ready(function($){
 		$('body').addClass("noScroll");
 		$('#contact-form').fadeIn();
 
-		$(window).on('resize', function(){
+		// $(window).on('resize', function(){
  			
- 			//Get the parent, video, lightbox height and width
- 			var lightboxHeight = $('.lightbox').height();
- 				contactHeight = $('.lightbox-wrapper').height();
+ 	// 		//Get the parent, video, lightbox height and width
+ 	// 		var lightboxHeight = $('.lightbox').height();
+ 	// 			contactHeight = $('.lightbox-wrapper').height();
 
-	 		//video marginTop : parent height - video height /2
-	 		$('.lightbox-wrapper').css('margin-top',(lightboxHeight - 500) / 2);
+	 // 		//video marginTop : parent height - video height /2
+	 // 		$('.lightbox-wrapper').css('margin-top',(lightboxHeight - 500) / 2);
 
- 		}).resize();
+ 	// 	}).resize();
 	});
 
  	//Add class you mobile nav to add close functionality on click

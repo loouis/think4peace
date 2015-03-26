@@ -497,15 +497,7 @@ section#the-schools{
 			p{
 				width:100%;
 				margin-top:4%;
-			}
-			
-			@include screen(medium){
-				p:nth-of-type(1), p:nth-of-type(2){
-					float:left;
-					width:50%;
-					margin-top:4%;
-					padding-right:4%;
-				}
+				float:left;
 			}
 		}
 	}
@@ -1266,27 +1258,71 @@ section{
 
 //----------------------------------------------------------- LIGHTBOX
 
+// .lightbox {
+//   // display: none;
+//   position: absolute;
+//   z-index: 999;
+//   top: 0;
+//   bottom: 0;
+//   height: 500%;
+//   right: 0;
+//   left: 0;
+//   text-align: center;
+//   color: white;
+//   letter-spacing: 1px;
+//   font-size: 22px;
+//   width:100%;
+//   background: rgba(0, 0, 0, 0.8); 
+//  }
+//   /* line 135, ../sass/screen.scss */
+//   .lightbox .wrapper {
+//     width: 400px;
+//     margin: 0 auto; 
+//     background:red}
+//     /* line 139, ../sass/screen.scss */
+//     .lightbox .wrapper p {
+//       padding-top: 20px; }
+
+
+
+
+
+
+
+
+
 .lightbox{
-	display:none;
-	position:fixed;
-	top:0;
-	left:0;
-	right:0;
-	background:none;
-	z-index:200;
-	bottom:0;
+	  position: fixed;
+  z-index: 999;
+  top: 0;
+  bottom: 0;
+  height: 200%;
+  right: 0;
+  overflow: scroll;
+  left: 0;
+  width: 100%;
+  background:rgba($tblue,0.95);
 	
 	.lightbox-wrapper{
-		max-width:850px;
+		width:100%;
 		margin: 0 auto;
 		padding: 0 15px;
+		height: 1600px;
+		padding-bottom:60px;
 		@include clearfix;
 		position:relative;
+		  overflow: scroll;
 		
 		@include screen (medium){
-			padding: 0 0px;
+			padding: 0 15px;
 		}
-			
+
+		.address{
+			margin-bottom:20px;
+			p{
+				margin-top:0;
+			}
+		}
 	}
 
 	.close-container{
@@ -1303,7 +1339,11 @@ section{
 
 #contact-form .lightbox-wrapper{
 	max-width:1000px;
-	margin-top:75px;
+	margin-top:45px;
+	
+	@include screen(medium){
+		margin-top:75px;
+	}
 	
 	.left-column{
 		h2{
