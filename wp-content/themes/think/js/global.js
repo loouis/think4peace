@@ -31,7 +31,6 @@ jQuery(document).ready(function($){
 
 	//mobile nav show the links to scroll down the page
 	$('button.burger-menu').click(function(){
-		// $('ul.nav-links').toggleClass("show-navigation");
 		$('ul.nav-links').slideToggle();
 		$('#nav-icon3').toggleClass('open');
 	});
@@ -80,8 +79,8 @@ jQuery(document).ready(function($){
 	$('#contact-scroll-to').click(function(e){
 		e.preventDefault();
 
-		contactScrollTo.scrollTop = 0;
-		document.getElementById('contactScrollTo').scrollTop += 60;
+		// contactScrollTo.scrollTop = 0;
+		// document.getElementById('contactScrollTo').scrollTop += 60;
 	});
 
  	//Add class you mobile nav to add close functionality on click

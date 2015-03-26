@@ -33,9 +33,12 @@ Review 1:
   ✔ Nav font size @done (15-03-26 15:11)
   ✔ Cross on mobile touch area @done (15-03-26 15:36)
   ☐ Contact styling on mobile
-  ☐ Mobile blog post image padding top
+  ☐ mobile close nav
+  ✔ Mobile blog post image padding top @done (15-03-26 16:16)
   ☐ Pause youtube video when closing lightbox
   ☐ Mobile native styling
+  ☐ Picture movement under lightbox
+
 
 
 Fix:

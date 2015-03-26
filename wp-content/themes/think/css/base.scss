@@ -57,7 +57,7 @@ nav{
 			left:0;
 			top:65px;
 			padding:10px 0;
-			font-size:24px;
+			font-size:22px;
 			display:none;			
 			transition: top .3s ease-in-out;
 			
@@ -146,6 +146,7 @@ nav{
 		padding: 15px 0 0 13px;
 		background-color:$tblue;
 		
+		
 		@include screen (medium){
 			height:80px;
 			width:80px;
@@ -157,11 +158,6 @@ nav{
 		}
 		
 	}
-
-	// ul.show-navigation{
-	// 	top:80px;
-	// }
-
 } 
 
 
@@ -181,6 +177,7 @@ nav{
 
 section#the-challenge{
 	background:white;
+	
 	
 	h3{
 		margin-top:20px;
@@ -264,7 +261,7 @@ section#welcome{
 	
 	.main-wrapper{
 		@include screen(medium){
-			padding-top:75px;
+			padding-top:65px;
 		}
 
 		#play-video{
@@ -439,10 +436,10 @@ section#the-schools{
 	background: white; 
 	
 	.main-wrapper{
-		padding-top:75px;
+		padding-top:65px;
 		
 		@include screen (medium){
-			padding-top:140px;
+			padding-top:120px;
 		}
 	}
 
@@ -491,7 +488,7 @@ section#the-schools{
 	
 	
 	.right-column{
-		margin-top:1.5%;
+		margin-top:1.9%;
 		
 		@include screen (medium){
 			padding-left:2%;
@@ -1461,6 +1458,8 @@ input, textarea, .wpcf7-submit{
   	color:white;
   	border: 2px solid white;
   	resize: vertical;
+  	border: none;
+outline: none;
   	
   	@include screen (medium){
   		margin: 10px 0;
@@ -1502,6 +1501,8 @@ div.wpcf7{
   background:white;
   color:$tblue;
   padding:14px 0;
+  border: none;
+  outline: none;
   
   text-align: center;
   
@@ -1533,6 +1534,12 @@ div.wpcf7{
 	  	}
 	}
 	
+}
+
+button{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 
