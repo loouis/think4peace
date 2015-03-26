@@ -115,6 +115,11 @@ jQuery(document).ready(function($){
  		$('section#lightbox-video .video-wrapper').empty();
  	});
 
+ 	//close lightbox from cross button
+ 	$('button.close-lightbox').click(function(){
+ 		$('.lightbox').fadeOut();
+ 	});
+
 
  	//Close lightbox with escape key
 	$(document).keyup(function(e) { 

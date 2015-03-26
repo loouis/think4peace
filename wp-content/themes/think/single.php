@@ -31,13 +31,9 @@
 
 							<h1><?php the_title();?></h1>
 
-							<!-- <time class="date"><?php the_time('d.m.Y'); ?></time>
-
-							<span class="author"> by <?php the_author_posts_link(); ?></span> -->
-
 							<?php the_content();?>
 
-							<p><?php _e( 'This post was written by ', 'html5blank' ); the_author(); ?></p>
+							<p class="single-post-author"><?php _e( 'This post was written by ', 'html5blank' ); the_author(); ?></p>
 
 							<div class="next-prev-posts">
 								<a href="<?php echo get_permalink(get_adjacent_post(false,'',true)); ?>" class="previous-post one-half">>
@@ -94,8 +90,7 @@
 		</div>
 
 		<div class="lightbox-wrapper">
-
-				<?php echo do_shortcode('[contact-form-7 id="99" title="Contact form"]')?>	
+			<?php echo do_shortcode('[contact-form-7 id="99" title="Contact form"]')?>	
 		</div>
 	</section><!-- /lightbox video -->
 

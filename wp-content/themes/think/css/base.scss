@@ -981,6 +981,11 @@ span.large-type{
 
 section#blog-single{
 	@include clearfix;
+	
+	// ************************************** Delete this to show Author
+	.single-post-author{
+		display:none;
+	}
 
 	.main-wrapper{
 		.blog-right-column{
@@ -1281,24 +1286,24 @@ section{
 
 
 .contact-lightbox{
-	  position: fixed;
-	  display:none;
-  z-index: 999;
-  top: 0;
-  bottom: 0;
-  height: 200%;
-  right: 0;
-  overflow: scroll;
-  left: 0;
-  width: 100%;
-  background:none;
+	position: fixed;
+	display:none;
+	z-index: 200;
+	top: 0;
+	bottom: 0;
+	height: 200%;
+	right: 0;
+	overflow: scroll;
+	left: 0;
+	width: 100%;
+	background:none;
 
 	
 	.lightbox-wrapper{
 		width:100%;
 		margin: 0 auto;
 		padding: 0 15px;
-		height: 1650px;
+		height: 1700px;
 		background:none;
 		padding-bottom:60px;
 		@include clearfix;
@@ -1327,6 +1332,25 @@ section{
 	}
 }
 
+.close-container__header-bar{
+	position:fixed;
+	top:0;
+	left:0;
+	height:65px;
+	background:rgba($tblue, 0.95);
+	width:100%;
+	z-index:999;
+	button.close-lightbox{
+		padding: 30px 30px 30px 30px;
+		cursor:pointer;
+		position: absolute;
+		right: 0;
+		top: 0;
+		background: url(./img/close.png) no-repeat 17px 19px;
+
+	}
+}
+
 .close-container{
 	background:rgba($tblue,0.95);
 	position:fixed;
@@ -1336,18 +1360,6 @@ section{
 	right:0;
 	bottom:0;
 	z-index:0;
-	
-	.close-container__header-bar{
-		button.close-lightbox{
-			padding: 30px 30px 30px 30px;
-			cursor:pointer;
-			position: absolute;
-			right: 0;
-			top: 0;
-			background: url(./img/close.png) no-repeat 17px 19px;
-
-		}
-	}
 }
 
 .video-lightbox{
@@ -1370,7 +1382,7 @@ section{
 
 #contact-form .lightbox-wrapper{
 	max-width:1000px;
-	margin-top:45px;
+	margin-top:61px;
 	
 	@include screen(medium){
 		margin-top:75px;
@@ -1410,7 +1422,6 @@ section{
 
 	p{
 		color:white;
-		// text-align:center;
 	}
 }
 
