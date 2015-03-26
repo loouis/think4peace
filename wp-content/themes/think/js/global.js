@@ -62,7 +62,7 @@ jQuery(document).ready(function($){
  				videoHeight = $('.lightbox-wrapper').height();
 
 	 		//video marginTop : parent height - video height /2
-	 		$('.lightbox-wrapper').css('margin-top',(lightboxHeight - videoHeight) / 2);
+	 		$('.video-lightbox .lightbox-wrapper').css('margin-top',(lightboxHeight - videoHeight) / 2);
 
  			lightbox.fitVids();
 
