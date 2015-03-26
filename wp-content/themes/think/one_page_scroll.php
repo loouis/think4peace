@@ -525,7 +525,9 @@ get_header(); ?>
 	<!-- Lightbox video -->
 	<section id="lightbox-video" class="lightbox video-lightbox">
 		<div class="close-container">
-			<button class="close-lightbox"></button>
+			<div class="close-container__header-bar">
+				<button class="close-lightbox"></button>
+			</div>
 		</div>
 
 		<?php $welcome = new WP_Query('page_id=36');
@@ -544,12 +546,13 @@ get_header(); ?>
 	<!-- Lightbox video -->
 	<section id="contact-form" class="contact-lightbox lightbox">
 		<div class="close-container">
-			<button class="close-lightbox"></button>
+			<div class="top-bar">
+				<button class="close-lightbox"></button>
+			</div>
 		</div>
 
 		<div class="lightbox-wrapper">
-
-				<?php echo do_shortcode('[contact-form-7 id="99" title="Contact form"]')?>	
+			<?php echo do_shortcode('[contact-form-7 id="99" title="Contact form"]')?>	
 		</div>
 	</section><!-- /lightbox video -->
 

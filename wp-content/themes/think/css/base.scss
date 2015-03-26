@@ -1338,12 +1338,12 @@ section{
 	z-index:0;
 	
 	button.close-lightbox{
-		padding: 30px 30px 30px 50px;
+		padding: 30px 30px 30px 30px;
 		cursor:pointer;
 		position: absolute;
 		right: 0;
 		top: 0;
-		background: url(./img/close.png) no-repeat 37px 19px;
+		background: url(./img/close.png) no-repeat 17px 19px;
 
 	}
 }
@@ -1426,7 +1426,7 @@ input, textarea, .wpcf7-submit{
   	color:white;
   	border: 2px solid white;
   	resize: vertical;
-  	
+  	box-shadow: none !important;
   	//iPhone overrride
   	-webkit-border-radius:0; 
   	

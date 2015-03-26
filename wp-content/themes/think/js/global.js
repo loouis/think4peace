@@ -16,15 +16,15 @@ jQuery(document).ready(function($){
 	//Scrollit init
 	$.scrollIt();
 
-	function isMobile() {
-		return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-	}
+	// function isMobile() {
+	// 	return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+	// }
 
-	if (!isMobile()) {
-	//Sticky init
-		$('.sticky').sticky({topSpacing:110});
+	// if (!isMobile()) {
+	// //Sticky init
+	// 	$('.sticky').sticky({topSpacing:110});
 
-	}
+	// }
 
 	// INIT Fitvids.js
 	$(".video-wrapper").fitVids();
