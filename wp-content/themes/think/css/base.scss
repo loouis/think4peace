@@ -1279,38 +1279,6 @@ section{
 
 //----------------------------------------------------------- LIGHTBOX
 
-// .lightbox {
-//   // display: none;
-//   position: absolute;
-//   z-index: 999;
-//   top: 0;
-//   bottom: 0;
-//   height: 500%;
-//   right: 0;
-//   left: 0;
-//   text-align: center;
-//   color: white;
-//   letter-spacing: 1px;
-//   font-size: 22px;
-//   width:100%;
-//   background: rgba(0, 0, 0, 0.8); 
-//  }
-//   /* line 135, ../sass/screen.scss */
-//   .lightbox .wrapper {
-//     width: 400px;
-//     margin: 0 auto; 
-//     background:red}
-//     /* line 139, ../sass/screen.scss */
-//     .lightbox .wrapper p {
-//       padding-top: 20px; }
-
-
-
-
-
-
-
-
 
 .contact-lightbox{
 	  position: fixed;
@@ -1371,7 +1339,7 @@ section{
 	
 	button.close-lightbox{
 		padding: 30px 30px 30px 50px;
-		background: red;
+		cursor:pointer;
 		position: absolute;
 		right: 0;
 		top: 0;
@@ -1458,8 +1426,9 @@ input, textarea, .wpcf7-submit{
   	color:white;
   	border: 2px solid white;
   	resize: vertical;
-  	border: none;
-outline: none;
+  	
+  	//iPhone overrride
+  	-webkit-border-radius:0; 
   	
   	@include screen (medium){
   		margin: 10px 0;
@@ -1501,10 +1470,12 @@ div.wpcf7{
   background:white;
   color:$tblue;
   padding:14px 0;
-  border: none;
-  outline: none;
   
   text-align: center;
+  
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   
 
 }

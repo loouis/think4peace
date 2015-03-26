@@ -24,7 +24,7 @@
 
 
 Review 1:
-  ☐ 10px padding-top
+  ✔ 10px padding-top @done (15-03-26 16:29)
   ✔ Schools text margin-top: @done (15-03-26 15:16)
   ✔ Close button on the single blog post @done (15-03-26 15:34)
   ✔ Social links in footer out @done (15-03-26 15:17)
@@ -38,6 +38,7 @@ Review 1:
   ☐ Pause youtube video when closing lightbox
   ☐ Mobile native styling
   ☐ Picture movement under lightbox
+  ☐ cursror pointer on clode button
 
 
 
