@@ -20,14 +20,14 @@
    ✔ take scroll off body when on lightbox @done (15-03-25 16:51)
    ✔ Add list in the Methodology section to the CMS @done (15-03-25 12:56)
    ✔ Add contact text to the contact section @done (15-03-25 15:15)
-   ☐ Need email addresses for contact form
+   ✔ Need email addresses for contact form @done (15-03-26 12:53)
 
 
 Fix:
 
-  ☐ Parallax scroll
+  ✔ Parallax scroll @done (15-03-26 12:53)
   ☐ Add large type to mobile
-  ☐ Mobile lightbox
+  ✔ Mobile lightbox @done (15-03-26 12:53)
   ☐ 
 
 
@@ -37,14 +37,13 @@ Fix:
 
  General Styles:
    ✔ Contact form 7 @done (15-03-23 23:58)
-   ☐ Add close button to lightbox
+   ✔ Add close button to lightbox @done (15-03-26 14:30)
 
 
  Styles:
 
    Mobile:
      ✔ Numbers have a line needs to go @done (15-03-23 20:27)
-     ☐ Blog post image and
 
 
 

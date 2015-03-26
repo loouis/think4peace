@@ -754,6 +754,7 @@ section#the-benefits{
 
 				@include screen(medium){
 					left: 34px;
+					width:500px;
 					
 					svg{
 						width:100%;
@@ -785,6 +786,16 @@ section#quotes{
 
 		blockquote{
 			padding-bottom:5px;
+		}
+
+		.row3{
+			.two--thirds{
+				margin-top:4%;
+				
+				@include screen (medium){
+					margin-top:0;
+				}
+			}
 		}
 		
 		.section-title{
@@ -1291,8 +1302,9 @@ section{
 
 
 
-.lightbox{
+.contact-lightbox{
 	  position: fixed;
+	  display:none;
   z-index: 999;
   top: 0;
   bottom: 0;
@@ -1301,13 +1313,15 @@ section{
   overflow: scroll;
   left: 0;
   width: 100%;
-  background:rgba($tblue,0.95);
+  background:none;
+
 	
 	.lightbox-wrapper{
 		width:100%;
 		margin: 0 auto;
 		padding: 0 15px;
-		height: 1600px;
+		height: 1650px;
+		background:none;
 		padding-bottom:60px;
 		@include clearfix;
 		position:relative;
@@ -1315,6 +1329,8 @@ section{
 		
 		@include screen (medium){
 			padding: 0 15px;
+			height: 800px;
+			max-width:1000px;
 		}
 
 		.address{
@@ -1324,17 +1340,46 @@ section{
 			}
 		}
 	}
+}
 
-	.close-container{
-		background:rgba($tblue,0.95);
-		position:fixed;
-		top:0;
-		cursor:zoom-out;
-		left:0;
-		right:0;
-		bottom:0;
-		z-index:0;
+.close-container{
+	background:rgba($tblue,0.95);
+	position:fixed;
+	top:0;
+	cursor:zoom-out;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:0;
+	
+	button.close-lightbox{
+		width:45px;
+		height:45px;
+		background:red;
+		position:absolute;
+		right:15px;
+		top:25px;
+		
+		background: url(./img/close.png) no-repeat;
 	}
+}
+
+.video-lightbox{
+	display:none;
+	  position:fixed;
+	  top:0;
+	  left:0;
+	  right:0;
+	  background:none;
+	  z-index:200;
+	  bottom:0;
+	  
+	  .lightbox-wrapper{
+	  	max-width:1000px;
+	  	margin:0 auto;
+	  	padding: 0 15px;
+	  }
+	 
 }
 
 #contact-form .lightbox-wrapper{

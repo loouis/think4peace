@@ -37,9 +37,9 @@ jQuery(document).ready(function($){
 	});
 
 	//change z-index on large letter when near the video
-	$('.large-type').hover(function(){
-		$('#play-video').css({
-			'z-index' : '99'
+	$('#play-video  .large-type').hover(function(){
+		$(this).css({
+			'z-index' : '0'
 		});
 
 	});
@@ -57,7 +57,6 @@ jQuery(document).ready(function($){
  		$('section#lightbox-video').fadeIn();
 
  		$(window).on('resize', function(){
- 			
  			//Get the parent, video, lightbox height and width
  			var lightboxHeight = $('.lightbox').height();
  				videoHeight = $('.lightbox-wrapper').height();

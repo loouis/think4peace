@@ -523,8 +523,10 @@ get_header(); ?>
 
 
 	<!-- Lightbox video -->
-	<section id="lightbox-video" class="lightbox">
-		<div class="close-container"></div>
+	<section id="lightbox-video" class="lightbox video-lightbox">
+		<div class="close-container">
+			<button class="close-lightbox"></button>
+		</div>
 
 		<?php $welcome = new WP_Query('page_id=36');
 
@@ -541,7 +543,9 @@ get_header(); ?>
 
 	<!-- Lightbox video -->
 	<section id="contact-form" class="contact-lightbox lightbox">
-		<div class="close-container"></div>
+		<div class="close-container">
+			<button class="close-lightbox"></button>
+		</div>
 
 		<div class="lightbox-wrapper">
 
