@@ -213,13 +213,34 @@ section#the-challenge{
 
 		.row2{
 			.one--third{
+
 				&:nth-child(3){
 					margin-left:2%;
 					svg{
 						height:150px;
 						float: right;
+						
+						@media (min-width:480px){
+							height:200px;
+						}
 					}
 				}
+				@include screen (medium){
+
+					span.large-type{
+						// left:260px;
+					}
+
+					&:nth-child(3){
+						margin-left:0%;
+						
+						svg{
+							float:left;
+							height:auto;
+						}
+					}
+				}
+				
 			}
 		}
 
