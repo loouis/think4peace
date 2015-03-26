@@ -24,6 +24,9 @@ get_header(); ?>
 					</div>
 
 					<div class="two--thirds" id="play-video">
+					<span class="large-type" data-anchor-target="#welcome" data-150-top="transform: translate(0px, 35px);" data-top-bottom="transform: translate(0px,-300px);">
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 560 560" enable-background="new 0 0 560 560" xml:space="preserve"><path fill="#009BD6" d="M227.5,123.7l47.8-48.5v473.9h-47.8V123.7z M126.3,68h141.8l-47.8,48.5H78.5L126.3,68z M343.3,68h138.2L433,116.5h-89.7V68z M71.3,65.1L119,17.4v43.4l-47.8,48.5V65.1z M121.9,0L61.1,60.8v65.8h156.3v432.7h65.1l60.8-60.8V126.6h94.1l61.5-61.5V0H121.9z"/></svg>
+				</span>
 						<div class="play-button-container">
 							<div class="video-play-btn">
 								<svg version="1.1" id="icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19.9 19.9" enable-background="new 0 0 19.9 19.9" xml:space="preserve"><polygon fill="#009cd6" points="5.5,1.7 5.5,18.2 18.8,9.9 "/>
@@ -66,9 +69,6 @@ get_header(); ?>
 				<!-- hink svg -->
 				<span class="hink">
 					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 283.4 800 233.2" enable-background="new 0 283.4 800 233.2" xml:space="preserve"><path fill="#B2B2B2" d="M252.8,310.7l19.7-20v221.9h-20V310.7H252.8z M274,283.4l-25.5,25.5v207.7h27.3l25.5-25.5V283.4H274z"/><path fill="#B2B2B2" d="M721.3,422.6l11.3-20l49.5,88.2l-11.3,20L721.3,422.6z M668.9,416.8L729,311.1l34.2-20l-74.3,130.8v67.4l-20,20V416.8z M644.4,310.7l20-20v221.9h-20V310.7z M768.3,283.4l-43,24.8L692.9,365v-81.6h-27.3l-25.5,25.5v207.7h27.3l25.5-25.5v-60.5l48.8,86h30.6l14.9-26.2l-51.7-92.2L800,283.4H768.3z"/><path fill="#B2B2B2" d="M396,310.7l20-20v221.9h-20V310.7z M501.6,310.7l20-20v221.9h-25.5l-51.7-117.7v-49.2l56.8,129V310.7H501.6zM522.8,283.4l-25.5,25.5v86l-49.2-111.5h-31l-25.5,25.5v207.7h27.3l25.5-25.5v-86l48.8,111.5h31l25.5-25.5V283.4H522.8z"/><path fill="#B2B2B2" d="M105.6,398.2v-20H51.7l-20,20H105.6z M24,402.2V290.7l-19.7,20v201.8h20v-90.3H110v90.3h20V290.7l-20,20c0,30.2-0.7,61.9-0.7,91.8H24V402.2z M52.8,426.2v64.8l-25.5,25.5H0V308.9l25.5-25.5h27.3v90.3h52.8v-64.8l25.5-25.5h27.3v207.7L133,516.6h-27.3v-90.3H52.8z"/></svg>
-				</span>
-				<span class="large-type" data-anchor-target="#welcome" data-150-top="transform: translate(0px, 35px);" data-top-bottom="transform: translate(0px,-300px);">
-					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 560 560" enable-background="new 0 0 560 560" xml:space="preserve"><path fill="#009BD6" d="M227.5,123.7l47.8-48.5v473.9h-47.8V123.7z M126.3,68h141.8l-47.8,48.5H78.5L126.3,68z M343.3,68h138.2L433,116.5h-89.7V68z M71.3,65.1L119,17.4v43.4l-47.8,48.5V65.1z M121.9,0L61.1,60.8v65.8h156.3v432.7h65.1l60.8-60.8V126.6h94.1l61.5-61.5V0H121.9z"/></svg>
 				</span>
 				<div class="tblue"><?php the_field('main_text');?>
 			</div>
