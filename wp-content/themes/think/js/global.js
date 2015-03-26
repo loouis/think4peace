@@ -75,17 +75,13 @@ jQuery(document).ready(function($){
 
 		$('body').addClass("noScroll");
 		$('#contact-form').fadeIn();
+	});
 
-		// $(window).on('resize', function(){
- 			
- 	// 		//Get the parent, video, lightbox height and width
- 	// 		var lightboxHeight = $('.lightbox').height();
- 	// 			contactHeight = $('.lightbox-wrapper').height();
+	$('#contact-scroll-to').click(function(e){
+		e.preventDefault();
 
-	 // 		//video marginTop : parent height - video height /2
-	 // 		$('.lightbox-wrapper').css('margin-top',(lightboxHeight - 500) / 2);
-
- 	// 	}).resize();
+		contactScrollTo.scrollTop = 0;
+		document.getElementById('contactScrollTo').scrollTop += 60;
 	});
 
  	//Add class you mobile nav to add close functionality on click

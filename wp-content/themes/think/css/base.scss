@@ -36,8 +36,7 @@ nav{
 	
 	.logo{
 		width:140px;
-		height:60px;
-		margin: 14px 15px;
+		margin: 17px 15px;
 		float:left;
 		
 		@include screen (medium){
@@ -58,11 +57,13 @@ nav{
 			left:0;
 			top:65px;
 			padding:10px 0;
+			font-size:24px;
 			display:none;			
 			transition: top .3s ease-in-out;
 			
 			@include screen (medium){
 				top:80px;
+				font-size:16px;
 				padding:0px 0;
 			}
 			
@@ -142,7 +143,7 @@ nav{
 		float:right;
 		height:65px;
 		width:65px;
-		padding: 11px 0 0 13px;
+		padding: 15px 0 0 13px;
 		background-color:$tblue;
 		
 		@include screen (medium){
@@ -445,6 +446,12 @@ section#the-schools{
 		}
 	}
 
+	.tblue{
+
+		@include screen (medium){
+			margin-top:0;
+		}
+	}
 	
 	.left-column{
 
@@ -472,6 +479,12 @@ section#the-schools{
 			
 			@include screen (medium){
 				display:block;
+			}
+		}
+
+		.row{
+			.section-title{
+				margin-top:0;
 			}
 		}
 	}
@@ -754,7 +767,7 @@ section#the-benefits{
 
 				@include screen(medium){
 					left: 34px;
-					width:500px;
+					width:550px;
 					
 					svg{
 						width:100%;
@@ -1333,6 +1346,13 @@ section{
 			max-width:1000px;
 		}
 
+		.mobile-scroll-to{
+			display:block;
+			@include screen (medium){
+				display:none;
+			}
+		}
+
 		.address{
 			margin-bottom:20px;
 			p{
@@ -1353,14 +1373,13 @@ section{
 	z-index:0;
 	
 	button.close-lightbox{
-		width:45px;
-		height:45px;
-		background:red;
-		position:absolute;
-		right:15px;
-		top:25px;
-		
-		background: url(./img/close.png) no-repeat;
+		padding: 30px 30px 30px 50px;
+		background: red;
+		position: absolute;
+		right: 0;
+		top: 0;
+		background: url(./img/close.png) no-repeat 29px 27px;
+
 	}
 }
 

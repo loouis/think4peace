@@ -68,12 +68,34 @@
 
 		</section><!-- /section -->
 
-		<!-- Lightbox video -->
-	<section id="contact-form" class="contact-lightbox lightbox">
-		<div class="close-container"></div>
+	<!-- Lightbox video -->
+	<section id="lightbox-video" class="lightbox video-lightbox">
+		<div class="close-container">
+			<button class="close-lightbox"></button>
+		</div>
+
+		<?php $welcome = new WP_Query('page_id=36');
+
+			while($welcome->have_posts()) : $welcome->the_post();?>
 
 		<div class="lightbox-wrapper">
-			<?php echo do_shortcode('[contact-form-7 id="99" title="Contact form"]')?>		
+			<iframe width="560" height="315" src="<?php the_field('video_link');?>" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+		<?php endwhile;?>
+
+		<?php wp_reset_query();?>
+	</section><!-- /lightbox video -->
+
+	<!-- Lightbox video -->
+	<section id="contact-form" class="contact-lightbox lightbox">
+		<div class="close-container">
+			<button class="close-lightbox"></button>
+		</div>
+
+		<div class="lightbox-wrapper">
+
+				<?php echo do_shortcode('[contact-form-7 id="99" title="Contact form"]')?>	
 		</div>
 	</section><!-- /lightbox video -->
 
