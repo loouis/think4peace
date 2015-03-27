@@ -94,11 +94,12 @@ jQuery(document).ready(function($){
 
  	//Close video lightbox
  	$('.close-container').click(function(){
- 		//Kill video
- 		$('section#lightbox-video .lightbox-wrapper').empty();
  		$('body').removeClass("noScroll");
 
  		$('.lightbox').fadeOut();
+
+ 		//Kill video
+ 		$('section#lightbox-video .lightbox-wrapper').empty();
  	});
 
  	//close lightbox from cross button
