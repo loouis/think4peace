@@ -34,7 +34,7 @@
 
 			<!-- copyright -->
 			<p class="copyright">
-				&copy;<?php bloginfo('name'); ?>  <?php echo date('Y'); ?>
+				&copy;<?php echo date('Y'); ?> <?php bloginfo('name'); ?> for Peace is a Project of the Tim Parry Johnathan Ball Foundation for Peace
 			</p>
 			<!-- /copyright -->
 		</div>

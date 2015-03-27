@@ -85,13 +85,6 @@ jQuery(document).ready(function($){
  	});
 
 
- 	//Change cursor when hovering over the lightbox background
- 	$('.close-container').hover(function(){
- 		$(this).css('cursor' , 'url(./img/close-button.png), auto');
-
- 		// $(this).css('cursor' , '<?php bloginfo(template_url);?>/img/close-button.png, auto');
- 	});
-
  	//Close video lightbox
  	$('.close-container').click(function(){
  		$('body').removeClass("noScroll");
@@ -99,19 +92,20 @@ jQuery(document).ready(function($){
  		$('.lightbox').fadeOut();
 
  		//Kill video
- 		$('section#lightbox-video .lightbox-wrapper').empty();
+ 		player.pauseVideo();
  	});
 
  	//close lightbox from cross button
  	$('button.close-lightbox').click(function(){
  		$('.lightbox').fadeOut();
+ 		$('body').removeClass("noScroll");
  	});
 
 
  	//Close lightbox with escape key
 	$(document).keyup(function(e) { 
 		if (e.keyCode === 27) { 
-			// $('body').removeClass("noScroll");
+			$('body').removeClass("noScroll");
 			$('.lightbox').fadeOut();
 		} // esc key
 	});
