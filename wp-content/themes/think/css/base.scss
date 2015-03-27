@@ -1380,6 +1380,8 @@ section{
 	  .lightbox-wrapper{
 	  	max-width:1000px;
 	  	margin:0 auto;
+	  	position:relative;
+	  	z-index:999;
 	  	padding: 0 15px;
 	  }
 	 

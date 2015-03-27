@@ -13,8 +13,6 @@ jQuery(document).ready(function($){
 	//Scrollit init
 	$.scrollIt();
 
-	// INIT Fitvids.js
-	$(".video-wrapper").fitVids();
 
 	//mobile nav show the links to scroll down the page
 	$('button.burger-menu').click(function(){
@@ -34,13 +32,21 @@ jQuery(document).ready(function($){
 	lightbox = $(".lightbox-wrapper");
 	lightbox.fitVids();
 
- 	// video lightbox
- 	$('#play-video').click(function(){
+	var embedCodeVideo2 = $('#lightbox-video .lightbox-wrapper #hidden-video').text();
 
- 		$('body').addClass("noScroll");
+	$('#play-video').click(function(){
 
  		//Fade in lightbox
  		$('section#lightbox-video').fadeIn();
+
+ 		//no scroll on body
+ 		$('body').addClass("noScroll");
+
+ 		//get the youtube link from the hidden HTM
+
+ 		//Put the embed code into light wrapper div
+       	$('.video-lightbox .lightbox-wrapper').html(embedCodeVideo2);
+
 
  		$(window).on('resize', function(){
  			//Get the parent, video, lightbox height and width
@@ -53,7 +59,41 @@ jQuery(document).ready(function($){
  			lightbox.fitVids();
 
  		}).resize();
+
+
+ 		var lightboxHeight = $('.lightbox').height();
+ 				videoHeight = $('.lightbox-wrapper').height();
+
+	 		//video marginTop : parent height - video height /2
+	 		$('.video-lightbox .lightbox-wrapper').css('margin-top',(lightboxHeight - videoHeight) / 2);
  	});
+
+
+
+
+
+
+
+ 	// // video lightbox
+ 	// $('#play-video').click(function(){
+
+ 	// 	$('body').addClass("noScroll");
+
+ 	// 	//Fade in lightbox
+ 	// 	$('section#lightbox-video').fadeIn();
+
+ 	// 	$(window).on('resize', function(){
+ 	// 		//Get the parent, video, lightbox height and width
+ 	// 		var lightboxHeight = $('.lightbox').height();
+ 	// 			videoHeight = $('.lightbox-wrapper').height();
+
+	 // 		//video marginTop : parent height - video height /2
+	 // 		$('.video-lightbox .lightbox-wrapper').css('margin-top',(lightboxHeight - videoHeight) / 2);
+
+ 	// 		lightbox.fitVids();
+
+ 	// 	}).resize();
+ 	// });
 
  	// contact lightbox
  	$('.nav-links__contact').click(function(e){
@@ -91,14 +131,16 @@ jQuery(document).ready(function($){
 
  		$('.lightbox').fadeOut();
 
- 		//Kill video
- 		player.pauseVideo();
+ 		$('.video-lightbox .lightbox-wrapper').empty();
  	});
+
+
 
  	//close lightbox from cross button
  	$('button.close-lightbox').click(function(){
  		$('.lightbox').fadeOut();
  		$('body').removeClass("noScroll");
+ 		$('.video-lightbox .lightbox-wrapper').empty();
  	});
 
 

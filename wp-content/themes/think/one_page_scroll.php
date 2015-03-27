@@ -534,7 +534,7 @@ get_header(); ?>
 			while($welcome->have_posts()) : $welcome->the_post();?>
 
 		<div class="lightbox-wrapper">
-			<iframe width="560" height="315" src="<?php the_field('video_link');?>" frameborder="0" allowfullscreen></iframe>
+			<p id="hidden-video"><?php the_field('video_link');?></p>
 		</div>
 
 		<?php endwhile;?>
