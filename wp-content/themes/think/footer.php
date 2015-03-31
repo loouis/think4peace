@@ -5,8 +5,8 @@
 
 			<div class="founders-faces">
 				<ul>
-					<li><img src="<?php bloginfo(template_url);?>/img/founder-1-footer.jpg" alt="founder"></li>
 					<li><img src="<?php bloginfo(template_url);?>/img/founder-2-footer.jpg" alt="founder"></li>
+					<li><img src="<?php bloginfo(template_url);?>/img/founder-1-footer.jpg" alt="founder"></li>
 				</ul>
 			</div>
 
