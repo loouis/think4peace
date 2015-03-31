@@ -41,6 +41,9 @@
 										<svg version="1.1" id="previous_arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="184.6 0 429.4 800" enable-background="new 184.6 0 429.4 800" xml:space="preserve"><path fill="#3FA9F5" id="previous_arrow" d="M494.8,397.3L296.6,32.5l145.1,87.6l152.2,277.2L441.7,677.4L298,762.1L494.8,397.3z M206.1,706.1l169.5-308.8L206.1,87l64.6-63.2l203.9,373.4L272.2,770.7L206.1,706.1z M272.2-2l-87.6,87.6L354,398.7L184.6,710.4l87.6,87.6l0,0l182.4-107.7L614,398.7l0,0L456,108.6L272.2-2z"/></svg>
 									</div>
 								</a>
+								<a href="<?php bloginfo(url);?>/#blog" class="see-all-blog-posts">
+									View all posts
+								</a>
 								<a href="<?php echo get_permalink(get_adjacent_post(false,'',false)); ?>" class="next-post one-half">>
 									<div>
 										<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="184.6 0 429.4 800" enable-background="new 184.6 0 429.4 800" xml:space="preserve"><path fill="#3FA9F5" d="M494.8,397.3L296.6,32.5l145.1,87.6l152.2,277.2L441.7,677.4L298,762.1L494.8,397.3z M206.1,706.1l169.5-308.8L206.1,87l64.6-63.2l203.9,373.4L272.2,770.7L206.1,706.1z M272.2-2l-87.6,87.6L354,398.7L184.6,710.4l87.6,87.6l0,0l182.4-107.7L614,398.7l0,0L456,108.6L272.2-2z"/></svg>

@@ -39,6 +39,10 @@ nav{
 		margin: 17px 15px;
 		float:left;
 		
+		img{
+			margin-top:0;
+		}
+		
 		@include screen (medium){
 			width:180px;
 			margin: 22px 15px;
@@ -1029,10 +1033,10 @@ section#blog-single{
 				padding-top:20px;
 				margin-top:60px;
 
-				a.next-post, a.previous-post{
+				a{
 					height:100px;
 					float:left;
-					width:50%;
+					width:33.3%;
 					margin:0 0 0 0;
 					color:transparent;
 					
@@ -1064,6 +1068,16 @@ section#blog-single{
 			}
 		}
 	}
+}
+
+a.see-all-blog-posts{
+	color:$tblue !important;
+	padding-top: 13px;
+  	text-align: center;
+  	
+  	@include screen (medium){
+  		padding-top: 21px;
+  	}
 }
 
 
