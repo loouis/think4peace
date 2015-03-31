@@ -406,7 +406,7 @@ get_header(); ?>
 		<!-- Quotes -->
 		<section id="quotes">
 		<!-- ** change to 140 for the live site ** -->
-		<?php $quotes = new WP_Query('page_id=140');
+		<?php $quotes = new WP_Query('page_id=139');
 		while($quotes->have_posts()) : $quotes->the_post(); ?>
 
 			<div class="main-wrapper">
@@ -473,7 +473,7 @@ get_header(); ?>
 
 
 	<!-- Blog -->
-	<section id="blog" data-scroll-index='5'>
+	<section id="blog" data-scroll-index='6'>
 
 		<div class="main-wrapper">
 			<div class="blog-left-column one-fifth section-title">

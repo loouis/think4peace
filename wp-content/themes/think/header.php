@@ -73,7 +73,8 @@
 						<li class="nav-links__the-schools"><a href="#" data-scroll-nav='2'>The Schools we work with</a></li>
 						<li class="nav-links__the-methodology"><a href="#" data-scroll-nav='3'>The Methodology</a></li>
 						<li class="nav-links__the-benefits"><a href="#" data-scroll-nav='4'>The Benefits</a></li>
-						<li class="nav-links__blog"><a href="#" data-scroll-nav='5'>Blog</a></li>
+						<li class="nav-links__the-benefits"><a href="#" data-scroll-nav='5'>Testimonials</a></li>
+						<li class="nav-links__blog"><a href="#" data-scroll-nav='6'>Blog</a></li>
 						<li class="nav-links__contact"><a href="#">Contact</a></li>
 					</ul>
 				</div><?php
@@ -87,6 +88,7 @@
 					<li class="nav-links__the-schools"><a href="<?php bloginfo(url);?>/#the-schools">The Schools we work with</a></li>
 					<li class="nav-links__the-methodology"><a href="<?php bloginfo(url);?>/#the-methodology">The Methodology</a></li>
 					<li class="nav-links__the-benefits"><a href="<?php bloginfo(url);?>/#the-benefits">The Benefits</a></li>
+					<li class="nav-links__the-benefits"><a href="<?php bloginfo(url);?>/#testimonials">Testimonials</a></li>
 					<li class="nav-links__blog"><a href="<?php bloginfo(url);?>/#blog">Blog</a></li>
 					<li class="nav-links__contact"><a href="#">Contact</a></li>
 				</ul>
