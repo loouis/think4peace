@@ -410,7 +410,7 @@ get_header(); ?>
 	<!-- Quotes -->
 		<section id="quotes" data-scroll-index='5'>
 		<!-- ** change to 140 for the live site ** -->
-		<?php $quotes = new WP_Query('page_id=140');
+		<?php $quotes = new WP_Query('page_id=139');
 		while($quotes->have_posts()) : $quotes->the_post(); ?>
 
 			<div class="main-wrapper">
