@@ -297,7 +297,9 @@ get_header(); ?>
 
 				<div class="row2">
 
-					<div class="one--third blank-container hide">&nbsp;</div>
+					<div class="one--third">
+						<?php the_field('meth__left-col-row-two-left');?>
+					</div>
 
 					<div class="one--third hide">
 						<img src="<?php the_field('meth__left-col__row-two-left-img');?>" alt="">

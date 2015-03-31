@@ -593,10 +593,17 @@ section#the-methodology{
 		padding-left:0;
 		
 		.row2{
+			margin-top:4%;
+			
+			@include screen (medium){
+					margin-top:5% !important;
+					}
+			
 			.one--third{
+				
 
 				@include screen (medium){
-					margin-top:0 !important;
+					margin-top:0% !important;
 				
 					&:nth-child(3){
 						margin-top:20px;
