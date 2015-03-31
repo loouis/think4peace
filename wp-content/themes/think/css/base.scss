@@ -787,6 +787,12 @@ section#the-benefits{
 
 section#quotes{
 
+	padding-top:35px;
+	
+	@include screen (medium){
+		padding-top:135px;
+	}
+
 	.main-wrapper{
 		padding-top:60px;
 		
