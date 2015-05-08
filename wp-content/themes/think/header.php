@@ -70,7 +70,7 @@
 				<div class="links-container home-nav" id="menu-center">
 					<ul class="nav-links">
 						<li class="nav-links__the-challenge"><a href="#" data-scroll-nav='1'>The Challenge</a></li>
-						<li class="nav-links__the-schools"><a href="#" data-scroll-nav='2'>The Schools we work with</a></li>
+						<li class="nav-links__the-schools" id="google-test"><a href="#" data-scroll-nav='2'>The Schools we work with</a></li>
 						<li class="nav-links__the-methodology"><a href="#" data-scroll-nav='3'>The Methodology</a></li>
 						<li class="nav-links__the-benefits"><a href="#" data-scroll-nav='4'>The Benefits</a></li>
 						<li class="nav-links__the-benefits"><a href="#" data-scroll-nav='5'>Testimonials</a></li>
@@ -85,7 +85,7 @@
 			<div class="links-container" id="menu-center">
 				<ul class="nav-links">
 					<li class="nav-links__the-challenge"><a href="<?php bloginfo(url);?>/#the-challenge">The Challenge</a></li>
-					<li class="nav-links__the-schools"><a href="<?php bloginfo(url);?>/#the-schools">The Schools we work with</a></li>
+					<li class="nav-links__the-schools" id="google-test"><a href="<?php bloginfo(url);?>/#the-schools">The Schools we work with</a></li>
 					<li class="nav-links__the-methodology"><a href="<?php bloginfo(url);?>/#the-methodology">The Methodology</a></li>
 					<li class="nav-links__the-benefits"><a href="<?php bloginfo(url);?>/#the-benefits">The Benefits</a></li>
 					<li class="nav-links__the-benefits"><a href="<?php bloginfo(url);?>/#quotes">Testimonials</a></li>
