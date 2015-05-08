@@ -13,6 +13,10 @@ jQuery(document).ready(function($){
 	//Scrollit init
 	$.scrollIt();
 
+	$("#google-test").click( function() {
+        ga('send', 'event', 'Clicks', 'The schools', 'Homepage');
+	});
+
 
 	//mobile nav show the links to scroll down the page
 	$('button.burger-menu').click(function(){
