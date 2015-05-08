@@ -23,7 +23,7 @@ get_header(); ?>
 
 					</div>
 
-					<div class="two--thirds" id="play-video">
+					<div class="two--thirds" id="play-video" onClick="ga('send', 'event', { eventCategory: 'button', eventAction: 'click', eventLabel: 'play-video', eventValue: 1});">
 					<span class="large-type" data-anchor-target="#welcome" data-150-top="transform: translate(0px, 35px);" data-top-bottom="transform: translate(0px,-300px);">
 					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 560 560" enable-background="new 0 0 560 560" xml:space="preserve"><path fill="#009BD6" d="M227.5,123.7l47.8-48.5v473.9h-47.8V123.7z M126.3,68h141.8l-47.8,48.5H78.5L126.3,68z M343.3,68h138.2L433,116.5h-89.7V68z M71.3,65.1L119,17.4v43.4l-47.8,48.5V65.1z M121.9,0L61.1,60.8v65.8h156.3v432.7h65.1l60.8-60.8V126.6h94.1l61.5-61.5V0H121.9z"/></svg>
 				</span>
