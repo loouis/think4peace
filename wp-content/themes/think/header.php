@@ -69,13 +69,13 @@
 				<!-- Front page header -->
 				<div class="links-container home-nav" id="menu-center">
 					<ul class="nav-links">
-						<li class="nav-links__the-challenge"><a href="#" data-scroll-nav='1'>The Challenge</a></li>
-						<li class="nav-links__the-schools" ><a href="#" data-scroll-nav='2' onClick="ga('send', 'event', { eventCategory: 'button', eventAction: 'click', eventLabel: 'schools', eventValue: 1});">The Schools we work with</a></li>
-						<li class="nav-links__the-methodology"><a href="#" data-scroll-nav='3'>The Methodology</a></li>
-						<li class="nav-links__the-benefits"><a href="#" data-scroll-nav='4'>The Benefits</a></li>
-						<li class="nav-links__the-benefits"><a href="#" data-scroll-nav='5'>Testimonials</a></li>
-						<li class="nav-links__blog"><a href="#" data-scroll-nav='6'>Blog</a></li>
-						<li class="nav-links__contact"><a href="#">Contact</a></li>
+						<li class="nav-links__the-challenge"><a href="#" data-scroll-nav='1' onClick="ga('send', 'event', { eventCategory: 'button', eventAction: 'click', eventLabel: 'the-challenge', eventValue: 1});">The Challenge</a></li>
+						<li class="nav-links__the-schools" ><a href="#" data-scroll-nav='2' onClick="ga('send', 'event', { eventCategory: 'button', eventAction: 'click', eventLabel: 'the-schools-we-work-with', eventValue: 1});">The Schools we work with</a></li>
+						<li class="nav-links__the-methodology"><a href="#" data-scroll-nav='3' onClick="ga('send', 'event', { eventCategory: 'button', eventAction: 'click', eventLabel: 'the-schools-we-work-with', eventValue: 1});">The Methodology</a></li>
+						<li class="nav-links__the-benefits"><a href="#" data-scroll-nav='4' onClick="ga('send', 'event', { eventCategory: 'button', eventAction: 'click', eventLabel: 'the-methodology', eventValue: 1});">The Benefits</a></li>
+						<li class="nav-links__the-benefits"><a href="#" data-scroll-nav='5' onClick="ga('send', 'event', { eventCategory: 'button', eventAction: 'click', eventLabel: 'testimonials', eventValue: 1});">Testimonials</a></li>
+						<li class="nav-links__blog"><a href="#" data-scroll-nav='6' onClick="ga('send', 'event', { eventCategory: 'button', eventAction: 'click', eventLabel: 'blog', eventValue: 1});">Blog</a></li>
+						<li class="nav-links__contact"><a href="#" onClick="ga('send', 'event', { eventCategory: 'button', eventAction: 'click', eventLabel: 'contact', eventValue: 1});">Contact</a></li>
 					</ul>
 				</div><?php
 			}
@@ -84,13 +84,13 @@
 			<!-- Other page header -->
 			<div class="links-container" id="menu-center">
 				<ul class="nav-links">
-					<li class="nav-links__the-challenge"><a href="<?php bloginfo(url);?>/#the-challenge">The Challenge</a></li>
-					<li class="nav-links__the-schools" ><a href="<?php bloginfo(url);?>/#the-schools" onClick="ga('send', 'event', { eventCategory: 'button', eventAction: 'click', eventLabel: 'schools', eventValue: 1});">The Schools we work with</a></li>
-					<li class="nav-links__the-methodology"><a href="<?php bloginfo(url);?>/#the-methodology">The Methodology</a></li>
-					<li class="nav-links__the-benefits"><a href="<?php bloginfo(url);?>/#the-benefits">The Benefits</a></li>
-					<li class="nav-links__the-benefits"><a href="<?php bloginfo(url);?>/#quotes">Testimonials</a></li>
-					<li class="nav-links__blog"><a href="<?php bloginfo(url);?>/#blog">Blog</a></li>
-					<li class="nav-links__contact"><a href="#">Contact</a></li>
+					<li class="nav-links__the-challenge"><a href="<?php bloginfo(url);?>/#the-challenge" onClick="ga('send', 'event', { eventCategory: 'button', eventAction: 'click', eventLabel: 'the-challenge', eventValue: 1});">The Challenge</a></li>
+					<li class="nav-links__the-schools" ><a href="<?php bloginfo(url);?>/#the-schools" onClick="ga('send', 'event', { eventCategory: 'button', eventAction: 'click', eventLabel: 'the-schools-we-work-with', eventValue: 1});">The Schools we work with</a></li>
+					<li class="nav-links__the-methodology"><a href="<?php bloginfo(url);?>/#the-methodology" onClick="ga('send', 'event', { eventCategory: 'button', eventAction: 'click', eventLabel: 'the-methodology', eventValue: 1});">The Methodology</a></li>
+					<li class="nav-links__the-benefits"><a href="<?php bloginfo(url);?>/#the-benefits" onClick="ga('send', 'event', { eventCategory: 'button', eventAction: 'click', eventLabel: 'the-benefits', eventValue: 1});">The Benefits</a></li>
+					<li class="nav-links__the-benefits"><a href="<?php bloginfo(url);?>/#quotes" onClick="ga('send', 'event', { eventCategory: 'button', eventAction: 'click', eventLabel: 'testimonials', eventValue: 1});">Testimonials</a></li>
+					<li class="nav-links__blog"><a href="<?php bloginfo(url);?>/#blog" onClick="ga('send', 'event', { eventCategory: 'button', eventAction: 'click', eventLabel: 'blog', eventValue: 1});">Blog</a></li>
+					<li class="nav-links__contact"><a href="#" onClick="ga('send', 'event', { eventCategory: 'button', eventAction: 'click', eventLabel: 'contact', eventValue: 1});">Contact</a></li>
 				</ul>
 			</div>
 			<?php }?>

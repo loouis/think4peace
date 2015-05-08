@@ -14,13 +14,6 @@ jQuery(document).ready(function($){
 	$.scrollIt();
 
 
-	$('#google-test').on('click', function() {
-	  ga('send', 'event', 'google-test', 'click', 'nav-buttons');
-
-	  console.log("clicked button");
-	});
-
-
 	//mobile nav show the links to scroll down the page
 	$('button.burger-menu').click(function(){
 		$('ul.nav-links').slideToggle();
