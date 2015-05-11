@@ -31,7 +31,7 @@ jQuery(document).ready(function($){
 	// Example with options
 	jQuery.scrollDepth({
 	  minHeight: false,
-	  elements: false,
+	  elements: true,
 	  percentage: true,
 	  userTiming: true,
 	  pixelDepth: false,
