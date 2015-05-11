@@ -499,7 +499,7 @@ get_header(); ?>
 					<?php endif; ?>
 
 					<!-- hover over blog section -->
-					<a href="<?php the_permalink(); ?>">
+					<a href="<?php the_permalink(); ?>" onClick="ga('send', 'event', { eventCategory: 'button', eventAction: 'click', eventLabel: 'blog-single', eventValue: 1});">
 						<div class="blog__hover">
 
 							<h2><?php the_title(); ?></h2>
