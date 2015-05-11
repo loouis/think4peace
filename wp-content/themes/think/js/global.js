@@ -28,6 +28,20 @@ jQuery(document).ready(function($){
 
 	});
 
+	// Example with options
+	jQuery.scrollDepth({
+	  minHeight: false,
+	  elements: ['#the-challenge', '#the-schools', '#the-methodology', '#the-benefits', '#quotes', '#blog'],
+	  percentage: false,
+	  userTiming: true,
+	  pixelDepth: false,
+	  nonInteraction: false,
+
+	  eventHandler: function(data) {
+	    console.log(data)
+	  }
+	});
+
  	//fitVids.js
 	lightbox = $(".lightbox-wrapper");
 	lightbox.fitVids();

@@ -58,7 +58,7 @@
 		</script>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	
 		<script src="http://www.youtube.com/iframe_api"></script>
+		<script src="<?php bloginfo(template_url);?>/js/libs/google-scroll-to.js"></script>
 	</body>
 </html>
