@@ -31,8 +31,8 @@ jQuery(document).ready(function($){
 	// Example with options
 	jQuery.scrollDepth({
 	  minHeight: false,
-	  elements: ['#the-challenge', '#the-schools', '#the-methodology', '#the-benefits', '#quotes', '#blog'],
-	  percentage: false,
+	  elements: false,
+	  percentage: true,
 	  userTiming: true,
 	  pixelDepth: false,
 	  nonInteraction: false,
