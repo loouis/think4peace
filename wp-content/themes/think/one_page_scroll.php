@@ -493,7 +493,7 @@ get_header(); ?>
 				<article class="one-half blog" id="post-<?php the_ID(); ?>">
 
 					<?php if ( has_post_thumbnail()) :?>
-						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" onClick="ga('send', 'event', { eventCategory: 'button', eventAction: 'click', eventLabel: 'blog-single', eventValue: 1});">
 							<?php the_post_thumbnail(array(433,380));?>
 						</a>
 					<?php endif; ?>
